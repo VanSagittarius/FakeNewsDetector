@@ -44,3 +44,6 @@ score=accuracy_score(y_test, y_pred)
 # Accuracy should be >92%
 accuracy = round(score*100,2)
 print(f'\nAccuracy: {accuracy}%')
+
+# Printing confusion matrix in order to visualize number of false, trues negatives and positives
+print(confusion_matrix(y_test,y_pred,labels=['FAKE','REAL']))
